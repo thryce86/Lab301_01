@@ -1,16 +1,38 @@
 
 import React from "react";
 import  HornedBeast  from "./HornedBeast.js";
+// import the data 
+import data  from "./data.json";
+
 
 class Main  extends React.Component{
 
   render(){
+
+    // assign holding array 
+    // will be used to display everything 
+    let all_the_elements = [] ;
+
+    // points to the data -> makes temp for an index-> gives you access to props 
+    data.forEach( (arrayElement) => {
+          console.log(arrayElement.image_url) ;
+          all_the_elements.push(
+
+                  <HornedBeast
+                        src={arrayElement.image_url}
+                        description={arrayElement.description}
+                        title={arrayElement.title}
+                        alt={arrayElement.keyword}
+                  />
+          )
+      // push each individual component to the array 
+
+    }  )
+
     return(   
       <>
       <main>
-          <HornedBeast src="https://nypost.com/wp-content/uploads/sites/2/2015/10/1_mpm-comedy_wildlife_awards05.jpg?quality=80&strip=all&w=1024"s  alt="Not Available" title='A deer' description='Some stuff' />
-          <HornedBeast src='https://assetsnffrgf-a.akamaihd.net/assets/m/502014128/univ/art/502014128_univ_lsr_xl.jpg' alt="Not Available" title='Will be a picture' description='' />
-
+          {all_the_elements}
       </main>
 
       </>
@@ -42,6 +64,3 @@ class Main  extends React.Component{
 
 export default Main;
 
-// export {
-//   HornedBeast
-// }
