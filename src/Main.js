@@ -15,7 +15,7 @@ class Main  extends React.Component{
 
     // points to the data -> makes temp for an index-> gives you access to props 
     data.forEach( (arrayElement) => {
-          console.log(arrayElement.image_url) ;
+          // console.log(arrayElement.image_url) ;
           all_the_elements.push(
 
                   <HornedBeast
