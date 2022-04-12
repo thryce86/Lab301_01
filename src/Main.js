@@ -1,3 +1,4 @@
+
 import React from "react";
 
 
@@ -20,7 +21,7 @@ class HornedBeast extends React.Component{
       return( 
         
         <div>
-          {/* <img src= {this.props.src} title={this.title}>  </img> */}
+          <img src= {this.props.src} alt={this.props.alt} />  
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
         </div>
