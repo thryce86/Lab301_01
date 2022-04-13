@@ -24,7 +24,7 @@ class Main  extends React.Component{
                         title={arrayElement.title}
                         alt={arrayElement.keyword}
                   />
-          )
+                                )
       // push each individual component to the array 
 
     }  )
@@ -32,7 +32,9 @@ class Main  extends React.Component{
     return(   
       <>
       <main>
+        <div id="cards_div">
           {all_the_elements}
+          </div>
       </main>
 
       </>

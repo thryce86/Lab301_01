@@ -4,6 +4,7 @@ import Footer from './Footer.js' ;
 // https://stackoverflow.com/questions/44128959/multiple-components-within-a-file
 import  './App.css';
 import Main from './Main.js' ;
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App  extends React.Component{
