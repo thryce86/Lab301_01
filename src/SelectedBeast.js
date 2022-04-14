@@ -1,6 +1,6 @@
 import React from "react";
 // import  HornedBeast  from "./HornedBeast.js";
-import { Modal ,View,Image } from "react-bootstrap";
+import { Modal  } from 'react-bootstrap';
 
 class SelectedBeast extends React.Component{
 // {console.log(  this.props.hideModalHandler)}

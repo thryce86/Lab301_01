@@ -8,10 +8,10 @@ import SelectedBeast from './SelectedBeast.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Lab 3 switched from making in main to making in app
 import data from "./data.json";
-import { Modal } from "react-bootstrap";
+// import { Modal } from "react-bootstrap";
 
 // Lab 04 
-import { Form, ListGroup } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 
 
 
@@ -130,7 +130,7 @@ class App extends React.Component {
                    name="select" >
 
                   {/* the number of horns  */}
-            <option value= "99" >ALL</option>
+            <option value="99" >ALL</option>
             <option value="1" >1</option>
             <option value="2">2</option>
             <option value="3">3</option>
