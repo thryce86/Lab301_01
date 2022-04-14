@@ -47,14 +47,25 @@ class App  extends React.Component{
     });
   };
 
+  setSelected = (src,alt,description,title)=>{
 
+    this.setState({
+      selected_src :src,
+      selected_alt:alt,
+      selected_description : description,
+      selected_title : title,
+    }, ()=>console.log(this.state.selected_description)  );
+    
+  };
+
+  
 
 
   render(){ 
 
     // Send the data file down from app into Main 
  
-
+   console.log('AAAAA' + this.state.selected_title);
 
 
 // sent data into main 
@@ -63,9 +74,15 @@ class App  extends React.Component{
               <Main 
                     data={data} 
                     showModalHandler={this.showModalHandler}
+                    setSelected={this.setSelected}
               />  
               <SelectedBeast showModal={this.state.showModal}
-                              onHide={this.hideModalHandler}       />
+                              onHide={this.hideModalHandler} 
+                              selected_src={this.state.selected_src}
+                              selected_alt ={this.state.selected_alt} 
+                              selected_description ={this.state.selected_description} 
+                              selected_title = {this.state.selected_title}
+                                />
              
               <Footer  />
             </>   ) ;

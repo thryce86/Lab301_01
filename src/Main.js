@@ -44,6 +44,8 @@ class Main  extends React.Component{
 
              //can shuttle the values   look into props drilling 
              showModalHandler={this.props.showModalHandler}
+             setSelected = {this.props.setSelected}
+
 
        />
       )
