@@ -35,12 +35,10 @@ class Main  extends React.Component{
       // console.log(all_the_elements);
 
      //check conditional
-      if(arrayElement.horns ===  this.props.hornsDisplayed || this.props.hornsDisplayed ===  99)
+      if(arrayElement.horns ===  this.props.hornsDisplayed || this.props.hornsDisplayed ===  99){
       
             return(
-
-        
-        <HornedBeast
+             <HornedBeast
              src={arrayElement.image_url}
              description={arrayElement.description}
              title={arrayElement.title}
@@ -55,8 +53,8 @@ class Main  extends React.Component{
              setSelected = {this.props.setSelected}
 
 
-       />
-      )
+            />
+      )}
 
      
      }  )
