@@ -4,6 +4,6 @@ Estimate of time needed to complete: 4.6 years
 
 Start time: 0330
 
-Finish time: _____
+Finish time: 0930
 
-Actual time needed to complete: _____
+Actual time needed to complete: 6 hrs
