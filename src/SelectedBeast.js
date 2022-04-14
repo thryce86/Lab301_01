@@ -39,9 +39,4 @@ render(){
 export default SelectedBeast ;
 
 
-{/* <Modal 
-show = {this.state.showModal} 
-onHide={this.hideModalHandler}
->
-   <Modal.Header closeButton></Modal.Header>
-</Modal> */}
+

@@ -38,7 +38,7 @@ class Main  extends React.Component{
       if(arrayElement.horns ===  this.props.hornsDisplayed || this.props.hornsDisplayed ===  99){
       
             return(
-             <HornedBeast
+               <HornedBeast
              src={arrayElement.image_url}
              description={arrayElement.description}
              title={arrayElement.title}
@@ -54,7 +54,9 @@ class Main  extends React.Component{
 
 
             />
-      )}
+      )}else(
+        <></>
+      )
 
      
      }  )
