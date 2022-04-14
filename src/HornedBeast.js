@@ -19,9 +19,16 @@ class HornedBeast  extends React.Component{
   handlesClicks=() =>{
     this.setState({
       clicks :this.state.clicks +1 , 
-     
+   
+
+
     })
-   console.log(this.state.clicks) ;   //it works
+
+    this.props.showModalHandler(this.props.name);
+    
+    this.props.setSelected(this.props.src , this.props.alt ,this.props.description ,this.props.title);
+
+  //  console.log(this.state.clicks) ;   //it works
   }
 
   render(){
