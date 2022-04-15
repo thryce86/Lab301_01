@@ -54,12 +54,16 @@ class Main  extends React.Component{
 
 
             />
-      )}else(
-        <></>
-      )
+      )} else{
+        return(<></>)
+      }
+      
 
      
-     }  )
+     }
+     
+     
+     )//end map
 
 
 
