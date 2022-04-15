@@ -32,12 +32,18 @@ class Main  extends React.Component{
 
   // Take the data sent from App and use a map function to parse this.
     let all_the_elements = this.props.data.map( (arrayElement,idx) => {
-      return(
-        <HornedBeast
+      // console.log(all_the_elements);
+
+     //check conditional
+      if(arrayElement.horns ===  this.props.hornsDisplayed || this.props.hornsDisplayed ===  99){
+      
+            return(
+               <HornedBeast
              src={arrayElement.image_url}
              description={arrayElement.description}
              title={arrayElement.title}
              alt={arrayElement.keyword}
+             horns={arrayElement.horns}
             
              // added extra
              key={idx}
@@ -47,9 +53,17 @@ class Main  extends React.Component{
              setSelected = {this.props.setSelected}
 
 
-       />
-      )
-     }  )
+            />
+      )} else{
+        return(<></>)
+      }
+      
+
+     
+     }
+     
+     
+     )//end map
 
 
 
@@ -58,6 +72,7 @@ class Main  extends React.Component{
 
     return(   
       <>
+      { console.log(all_the_elements)}
       <main>
         <div id="cards_div">
           {all_the_elements}

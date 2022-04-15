@@ -1,6 +1,6 @@
 import React from "react";
 // import  HornedBeast  from "./HornedBeast.js";
-import { Modal ,View,Image } from "react-bootstrap";
+import { Modal  } from 'react-bootstrap';
 
 class SelectedBeast extends React.Component{
 // {console.log(  this.props.hideModalHandler)}
@@ -39,9 +39,4 @@ render(){
 export default SelectedBeast ;
 
 
-{/* <Modal 
-show = {this.state.showModal} 
-onHide={this.hideModalHandler}
->
-   <Modal.Header closeButton></Modal.Header>
-</Modal> */}
+
